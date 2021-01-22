@@ -1,0 +1,35 @@
+import java.util.Scanner;
+import java.util.LinkedHashSet;
+import java.util.Set;
+public class Q4
+{
+    public static void main(String ... args)
+    {
+        String input = new Scanner(System.in).nextLine();
+        char[] chars = input.toCharArray(); // keep char in array
+        Set<Character> charSet = new LinkedHashSet<Character>();
+        for (char c : chars)
+        {
+          charSet.add(c);
+        }
+
+        StringBuilder sb = new StringBuilder();
+        for (Character character : charSet)
+        {
+          sb.append(character);
+        }
+        for (int i=0;i<sb.length();i++)
+        {
+          if(i<sb.length()-1) //no print , on last character
+          {
+            System.out.print(sb.charAt(i)+",");
+          }
+
+          else
+          {
+            System.out.print(sb.charAt(i));
+          }
+
+        }
+    }
+}
