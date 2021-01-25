@@ -23,6 +23,6 @@ public class Calculator5 {
    
     public static double sum (int[] list1, double[] list2)
     {
-        return Calculator.sum(list1)+Calculator.sum(list2);
+        return Calculator5.sum(list1)+Calculator5.sum(list2);
     } 
 }
