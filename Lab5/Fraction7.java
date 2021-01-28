@@ -39,5 +39,5 @@ public class Fraction7
         int total = top1 + top2;
         n2 = bottom * f2.bottom;
         return new Fraction7(total,n2);
-	}
+    }
 }
