@@ -9,13 +9,15 @@ public class Shop {
     nextOrderIndex = 0;
   }
 
-  public void printOrders() {
-    for (int i = 0; i < nextOrderIndex; i++) {
-      System.out.println("#" + i + " " + orders[i].toString());
-    }
-
+  public void printOrders() 
+  {
+      for(int i = 0; i < nextOrderIndex; i++) 
+      {
+       System.out.println("#" + i +" Table "+orders[i].getTable()+ ": " + orders[i].toString());
+      }
   }
 
+    
   public Product[] getMenu() {
     return menu;
   }
