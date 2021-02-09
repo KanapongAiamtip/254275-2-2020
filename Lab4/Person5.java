@@ -34,7 +34,7 @@ public class Person5
             return false;  
         } 
         // type casting of the argument.  
-        Person4 geek = (Person4) obj;     
+        Person5 geek = (Person5) obj;     
         // comparing the state of argument with  
         // the state of 'this' Object. 
         return (geek.name == this.name && geek.age == this.age); 
