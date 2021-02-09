@@ -14,7 +14,7 @@ public class Lab4Task2
             System.out.print(personA.getName() + " and " + personB.getName() + " are NOT the same age");
         }
     }
-    private static Person1 inputPerson()
+    private static Person2 inputPerson()
     {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the name: ");
