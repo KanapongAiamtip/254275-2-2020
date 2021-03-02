@@ -11,7 +11,7 @@ public class Game extends JFrame implements ActionListener
 	final JLabel questionLabel;
 	final JButton answer1 = new JButton();
 	final JButton answer2 = new JButton();
-	JLabel co = new JLabel();
+	JLabel iplann = new JLabel();
 	JLabel test = new JLabel();
 	int score;
 	//Reminder!!!!!!! : addActionListener() will be double if u dont do correctly!!!
@@ -61,19 +61,19 @@ public class Game extends JFrame implements ActionListener
 			answer2.setActionCommand("correct");
 		}
 	}
-		public void actionPerformed(ActionEvent pp)
+		public void actionPerformed(ActionEvent bk)
 		{
-			JButton pp = (JButton) pp.getSource();			//Using By cast!!
-			if (bk.getActionCommand().equals("correct"))
+			JButton pp = (JButton) bk.getSource();			//Using By cast!!
+			if (pp.getActionCommand().equals("correct"))
 			{
-				getContentPane().add(co);
+				getContentPane().add(iplann);
 				score++;
 				iplann.setText("Correct! Score: " +score);
 			}
 			else
 			{
 				score = 0;
-				getContentPane().add(co);
+				getContentPane().add(iplann);
 				iplann.setText("Sorry, you are wrong.");
 			}
 			nextQuestion();
@@ -83,4 +83,4 @@ public class Game extends JFrame implements ActionListener
 			Game app = new Game();
 			app.setVisible(true);
 		}
-}   // by soda and  friends comsci
+}   // by P soda
