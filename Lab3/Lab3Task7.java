@@ -23,7 +23,7 @@ public class Lab3Task7
         }
         else
         {
-            System.out.print(arrOfInputs[(arr.length - 1) / 2]);
+            System.out.print(arr[(arr.length - 1) / 2]);
         }
     }
 }
