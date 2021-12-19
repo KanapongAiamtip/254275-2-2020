@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Lab3Task3a
+public class Lab3Task3
 {
     public static void main(String[]args)
     {
